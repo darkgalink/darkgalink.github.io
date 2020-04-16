@@ -4,7 +4,100 @@ body{
     margin: 5px;
     padding: 5px;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+h1{
+    font-size: 64px;
+    margin: 40px;
+    color: #F3573D;
+}
+section{
+    margin: 20px;
+}
+footer{
+    background: #dadada;
+    margin-top: 150px;
+    width: 100%;
+    display: inline-block;
+}
+.Header{
+}
+
+img#logo-header{
+    width: 200px;
+    margin-top: 30px;
+    padding: -30px;
+    position: absolute; left: 45vw;
+    box-shadow: 0px 0px 12px rgba(100,100,100,0.5);
+    border-radius: 100%;
+    background-color: #F3573D;
+}
+
+.Sesión{
+    position: absolute; left: 1vw;
+    margin: 20px;
+}
+.Divisa{
+    position: absolute; right: 1vw;
+    margin: 20px;
+    padding: 20px;
+}
+
+.BotonSesión{
+    width: 200px;
+    height: 70px;
+    background: #342c49;
+    border: none;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.contenedor-portada{
+    margin-top: 150px;
+}
+.portada{
+    width: 95%;
+    margin: 10px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 15px rgba(100,100,100,0.5);
+}
+.Tarjeta-Torneo{
+    background-color: #ffffff;
+    border-radius: 30px;
+    margin: 30px;
+    margin-top: 70px;
+    box-shadow: 0px 0px 15px rgba(100,100,100,0.5);
+    display: inline-block;
+    text-align: center;
+    width: auto;
+    padding: 30px;
+}
+.Icono{
+    border-radius: 30px;
+    margin-top: -100px;
+    box-shadow: 0px 0px 15px rgba(100,100,100,0.5);
+}
+.Boton-inscripción{
+border: none;
+background: #59adff;
+box-shadow: 0px 0px 15px #59adff;
+border-radius: 60px;
+width: auto;
+height: auto;
+padding: 20px;
+font-size: 24px;
+font-weight: 600;
+}
+.Contenedor-Boton-Inscripción{
+    margin-bottom: -60px;
+}
+.Icono-Footer{
+    
+}
+#Icono-Footer{
+    width: 60px;
+    margin-top: -30px;
 }
