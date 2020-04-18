@@ -152,4 +152,9 @@ cursor: pointer;
     color: #F3573D;
     font-weight: 600;
 }
-@media
+.user-icon{
+    width: 0.7em;
+}
+.user-icon-path{
+    fill: white;
+}
