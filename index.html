@@ -153,10 +153,15 @@ amp-img#logo-header{
   text-align: center;
   border-radius: 50px;
   cursor: pointer;
-box-shadow:  20px 20px 42px #283544, 
--20px -20px 42px #36475c;
+  box-shadow:  20px 20px 42px #283544, 
+  -20px -20px 42px #36475c;
+  outline: 0px;
+  outline-width: 0 !important;
 }
-
+.BotonSesión:active{
+  box-shadow: inset 20px 20px 42px #283544, 
+  inset -20px -20px 42px #36475c;
+}
 .contenedor-portada{
   margin-top: 30px;
 }
@@ -195,6 +200,16 @@ padding: 20px;
 font-size: calc(0.6em + 1vw);
 font-weight: 600;
 cursor: pointer;
+}
+
+button{
+  outline: 0px;
+  outline-width: 0 !important;
+}
+button:active{
+  outline: 0px;
+  outline-width: 0 !important;
+  transform: translateY(4px);
 }
 .Contenedor-Boton-Inscripción{
   margin-bottom: -60px;
