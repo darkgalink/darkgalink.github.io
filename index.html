@@ -8,7 +8,13 @@
     <meta name="title" content="🏆Magüecha Tournament">
     <meta name="description" content="Torneos Reales de E-Sports al alcance de todos!! | desde $0,13 USD |">
     <meta name="theme-color" content="#2F3E50" />
+    <!--AMP javascript-->
     <script async custom-element="amp-script" src="https://cdn.ampproject.org/v0/amp-script-0.1.js"></script>
+    <!--AMP componente cuenta regresiva-->
+    <script async custom-element="amp-date-countdown" src="https://cdn.ampproject.org/v0/amp-date-countdown-0.1.js"></script>
+<!--AMP Mustache para script de cuenta regresiva-->
+    <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
+
     <link rel="canonical" href="index.html">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <script type="application/ld+json">
@@ -230,6 +236,48 @@ button:active{
 .user-icon-path{
   fill: white;
 }
+.temporizador{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.countdown{
+  margin: 10px;
+  color:#B032E7;
+  font-size: 2.2em;
+}
+.des-countdown{
+  font-size: 0.4em;
+}
+.titulo-countdown{
+  font-size:large;
+  color: #B032E7;
+  margin:0;
+  margin-top: 10px;
+}
+.contador{
+  border-style: solid;
+  border-width: 1px;
+  border-color:#B032E7;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  }
+.linea{
+display: flex;
+justify-items: center;
+align-items: center;
+width: 100vw;
+margin-top: -40px;
+margin-bottom: 50px;
+}
+.linea-int {
+  width: 200px;
+  height: 2px;
+  border-radius: 30px;
+  background-color: #F3573D;
+  margin:auto;
+}
 </style>
 <!--FIN ESTILOS PROPIOS ******************************************************************************-->
 
@@ -265,6 +313,7 @@ button:active{
 </amp-img>
 </div>
 <div><h1>Torneos Activos</h1></div>
+<div class="linea"><div class="linea-int"> </div></div>
 <!--Tarjeta torneo-->
 <div class="Tarjeta-Torneo">
   <div>
@@ -287,13 +336,23 @@ button:active{
 
 <p class="enfasis">Cierre Inscripciones: Abril 21 de 2020</p>
   </section>
-  
-<!-- prueba -->  
-
-  <amp-script layout="container" src="https://www.maguecha-tournament.ga/Source/Js/Script.js">
-    <p id="demo">0</p>
-  </amp-script>
-
+<div class="contador">
+  <p class="titulo-countdown">⏱ Faltan 😱:</p>  
+<!--Inicio Contador AMP-->
+<div>
+  <amp-date-countdown end-date="2020-05-04T10:00:00.000Z" offset-seconds="-10" layout="fixed-height" height="100">
+    <template type="amp-mustache">
+      <div class="temporizador">
+        <div class="countdown">{{d}} <div class="des-countdown">Días</div></div>
+        <div class="countdown">{{h}} <div class="des-countdown">Horas</div></div>
+        <div class="countdown">{{m}} <div class="des-countdown">Minutos </div></div>
+        <div class="countdown">{{s}}<div class="des-countdown">Segundos  </div></div>
+      </div>
+    </template>
+  </amp-date-countdown>
+</div>
+<!--Fin Contador AMP-->
+</div>
 
 
 </div>
@@ -303,6 +362,8 @@ button:active{
 </div>
 <!--Fin Tarjeta Torneo-->
   </body>
+
+  <!--FOOTER-->
 <footer>
   <div class="Icono-Footer">
     <amp-img 
