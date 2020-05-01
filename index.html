@@ -94,7 +94,7 @@ footer{
 .Header1{
   display: inline-block;
   background-color: #2F3E50;
-  margin-top: -4px;
+  margin-top: -10px;
   margin-left: -5px;
   width: 100vw;
   box-shadow: 0px 3px 5px rgba(39, 39, 39, 0.397);
@@ -125,17 +125,22 @@ amp-img#logo-header{
   background-color: #f1f1f1;
   color:lightslategray;
   font-weight:lighter;
-  display: block;
-  width: 100vw;
-  padding: 10px 10px 40px 10px;
-  margin-left: -5px;
-  margin-right: auto;
+  display: inline-block;
+  width: 90%;
+  padding: 0px 0px 40px 0px;
+  margin-left:auto;
+  margin-right:auto;
   margin-bottom: 0px;
   margin-top: 90px;
 }
 .parrafo-pequeño{
   font-size: 11px;
   font-weight: lighter;
+  text-align: center;
+  word-break:normal;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 /*-----INICIO MEDIA QUERY-----*/
 @media (max-width: 600px) {
@@ -148,15 +153,6 @@ amp-img#logo-header{
   height: 100px;
   display: inline-block;
 }
-
-.contador{
-  border-style: solid;
-  border-width: 1px;
-  border-color:#B032E7;
-  border-radius: 10px;
-  margin-bottom: 30px;
-  transform: scale(0.7);
-  }
 
 }
 /*-----Fin Media query------*/
@@ -171,9 +167,11 @@ margin-right: auto;
   width: 100vw;
   height: 1px;
   background-color: lightslategray;
+  display: block;
+  position: absolute; left: 0px;
   margin-top: 20px;
   margin-bottom: 20px;
-  margin-left: -10px;
+  margin-left:0px;
   margin-right: 0px;
 }
 .BotonSesión{
@@ -255,7 +253,7 @@ button:active{
   transform: translateY(4px);
 }
 .Contenedor-Boton-Inscripción{
-  margin-bottom: -65px;
+  transform: translateY(40px);
 }
 #Icono-Footer{
   width: 60px;
@@ -273,18 +271,23 @@ button:active{
   fill: white;
 }
 .temporizador{
-  display:flex;
-  align-items: center;
-  justify-content: center;
+  margin-left:1px;
+  margin-right:1px;
+  margin-top: 20px;
+  width: calc(100% + 1vw);
+  height: auto;
   margin-bottom: 20px;
 }
 .countdown{
-  margin: 10px;
   color:#B032E7;
-  font-size: 2.2em;
+  font-size: calc(30px + 1vw);
+  margin-left:5px;
+  margin-right: 5px;
+  display: inline-block;
+  width:auto;
 }
 .des-countdown{
-  font-size: 0.4em;
+  font-size: calc(12px + 0.2vw);
 }
 .titulo-countdown{
   font-size:large;
@@ -298,6 +301,7 @@ button:active{
   border-color:#B032E7;
   border-radius: 10px;
   margin-bottom: 30px;
+  height: auto;
   }
 
 
@@ -369,8 +373,8 @@ button:active{
       <div class="temporizador">
         <div class="countdown">{{d}} <div class="des-countdown">Días</div></div>
         <div class="countdown">{{h}} <div class="des-countdown">Horas</div></div>
-        <div class="countdown">{{m}} <div class="des-countdown">Minutos </div></div>
-        <div class="countdown">{{s}}<div class="des-countdown">Segundos  </div></div>
+        <div class="countdown">{{m}} <div class="des-countdown">Minutos</div></div>
+        <div class="countdown">{{s}} <div class="des-countdown">Segundos</div></div>
       </div>
     </template>
   </amp-date-countdown>
@@ -388,7 +392,7 @@ button:active{
 <!--DIVISA-->
 <div class="divisa">
   <div class="divisor"></div>
-<h3>¿Cuantos pesos colombianos son $0.13 dolares?</h3>
+<h3 style="margin-top: 40px;">¿Cuantos pesos colombianos son $0.13 dolares?</h3>
   <amp-iframe
 class="iframe" 
 width="102px" 
