@@ -81,77 +81,100 @@ section{
 }
 footer{
   background: #dadada;
-  margin-top: 150px;
+  margin-top: 0px;
+  margin-left: -5px;
+  margin-bottom: -10px;
   padding-bottom: 20px;
-  width: 100%;
+  width: 100vw;
   display: inline-block;
   font-size: calc(0.6em + 0.5vw);
+  clear: left: ;
+  z-index: 1;
 }
 .Header1{
-  display: block;
+  display: inline-block;
   background-color: #2F3E50;
-  margin: 0px;
-  position: absolute; top: 0; left: 0; right: 0;
-  width: 100%;
+  margin-top: -4px;
+  margin-left: -5px;
+  width: 100vw;
   box-shadow: 0px 3px 5px rgba(39, 39, 39, 0.397);
 }
 .Header2{
-  margin-top: 120px;
-  display: inline-block;
+ margin: 10px;
 }
 
 amp-img#logo-header{
-  z-index: 100;
-  width: 180px;
+    width: 180px;
   height: 180px;
   box-shadow: 0px 0px 12px rgba(100,100,100,0.5);
   border-radius: 100%;
   background-color: #F3573D;
-  margin: 30px 30px -80px 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 .Sesión{
   
   margin: 20px;
 }
-.Divisa{
-  
-  margin: 20px;
+.divisa{
   font-size: calc(1em + 0.2vw);
-  color: #ffffff;
+  background-color: #f1f1f1;
+  color:lightslategray;
   font-weight:lighter;
-}
-
-@media (max-width: 600px) {
-  .Header1{
   display: block;
+  width: 100vw;
+  padding: 10px 10px 40px 10px;
+  margin-left: -5px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-top: 90px;
 }
-.Header2{
-  margin-top: 150px;
+.parrafo-pequeño{
+  font-size: 11px;
+  font-weight: lighter;
+}
+/*-----INICIO MEDIA QUERY-----*/
+@media (max-width: 600px) {
+  
+.Icono{
+  border-radius: 15px;
+  margin-top: -100px;
+  box-shadow: 0px 0px 15px rgba(100,100,100,0.5);
+  width: 100px;
+  height: 100px;
   display: inline-block;
 }
-  amp-img#logo-header{
-  z-index: 100;
-  width: 150px;
-  height: 150px;
-  box-shadow: 0px 0px 12px rgba(100,100,100,0.5);
-  border-radius: 100%;
-  background-color: #F3573D;
-  margin: 30px 30px -60px 30px;
-}
-.Divisa{
-  font-size: calc(1em + 0.1vw );
-}
 
-}
-
-/*Fin Media query*/
-.iframe{
+.contador{
+  border-style: solid;
+  border-width: 1px;
+  border-color:#B032E7;
+  border-radius: 10px;
+  margin-bottom: 30px;
   transform: scale(0.7);
-  margin-left:-30px;
-  padding: 0px;
-  position: fixed; bottom: 50px; left: 0px;
-  z-index: 300;
+  }
+
+}
+/*-----Fin Media query------*/
+amp-iframe.iframe{
+ display: block;
+ margin-top:10px;
+ margin-bottom: 10px;
+margin-left: auto;
+margin-right: auto;
+}
+.divisor{
+  width: 100vw;
+  height: 1px;
+  background-color: lightslategray;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: -10px;
+  margin-right: 0px;
 }
 .BotonSesión{
   width: 200px;
@@ -178,27 +201,35 @@ amp-img#logo-header{
   margin-top: 30px;
 }
 .portada{
-  display: inline-block;
+  display:block;
   width: 95%;
-  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
   border-radius: 30px;
   box-shadow: 0px 0px 15px rgba(100,100,100,0.5);
 }
 .Tarjeta-Torneo{
   background-color: #ffffff;
   border-radius: 30px;
-  margin: 30px;
+  margin: 5px;
   margin-top: 70px;
   box-shadow: 0px 0px 15px rgba(100,100,100,0.5);
   display: inline-block;
   text-align: center;
   width: auto;
-  padding: 30px;
+  padding: 20px;
 }
 .Icono{
   border-radius: 30px;
   margin-top: -100px;
+  margin-left: auto;
+  margin-right: auto;
   box-shadow: 0px 0px 15px rgba(100,100,100,0.5);
+  width: 200px;
+  height: 200px;
+  display: block;
 }
 .Boton-inscripción{
 border: none;
@@ -224,7 +255,7 @@ button:active{
   transform: translateY(4px);
 }
 .Contenedor-Boton-Inscripción{
-  margin-bottom: -60px;
+  margin-bottom: -65px;
 }
 #Icono-Footer{
   width: 60px;
@@ -268,46 +299,32 @@ button:active{
   border-radius: 10px;
   margin-bottom: 30px;
   }
-.linea{
-display: flex;
-justify-items: center;
-align-items: center;
-width: 100vw;
-margin-top: -40px;
-margin-bottom: 50px;
-}
-.linea-int {
-  width: 200px;
-  height: 2px;
-  border-radius: 30px;
-  background-color: #F3573D;
-  margin:auto;
-}
+
 
 </style>
 <!--FIN ESTILOS PROPIOS ******************************************************************************-->
 
+  <!--Header-->
+  <div class="Header1">
+    <div class="Sesión"><button class="BotonSesión"><svg class="user-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path class="user-icon-path" d="M64 224h13.5c24.7 56.5 80.9 96 146.5 96s121.8-39.5 146.5-96H384c8.8 0 16-7.2 16-16v-96c0-8.8-7.2-16-16-16h-13.5C345.8 39.5 289.6 0 224 0S102.2 39.5 77.5 96H64c-8.8 0-16 7.2-16 16v96c0 8.8 7.2 16 16 16zm40-88c0-22.1 21.5-40 48-40h144c26.5 0 48 17.9 48 40v24c0 53-43 96-96 96h-48c-53 0-96-43-96-96v-24zm72 72l12-36 36-12-36-12-12-36-12 36-36 12 36 12 12 36zm151.6 113.4C297.7 340.7 262.2 352 224 352s-73.7-11.3-103.6-30.6C52.9 328.5 0 385 0 454.4v9.6c0 26.5 21.5 48 48 48h80v-64c0-17.7 14.3-32 32-32h128c17.7 0 32 14.3 32 32v64h80c26.5 0 48-21.5 48-48v-9.6c0-69.4-52.9-125.9-120.4-133zM272 448c-8.8 0-16 7.2-16 16s7.2 16 16 16 16-7.2 16-16-7.2-16-16-16zm-96 0c-8.8 0-16 7.2-16 16v48h32v-48c0-8.8-7.2-16-16-16z"/></svg> Inicia Sesión</button></div>
+    </div>
+    <div class="Header2">
+   <div class="logo-header">
+     <amp-img 
+     src="Source/Pic/Logo-Completo.png" 
+     width="150px"
+     height="150px"
+     layout="responsive" 
+     alt="logo" 
+     id="logo-header">
+     </amp-img>
+   </div>
+ </div>
+ <!--Fin Header-->
 </head>
 
   <body>
-    <!--Header-->
-    <div class="Header1">
-       <div class="Sesión"><button class="BotonSesión"><svg class="user-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path class="user-icon-path" d="M64 224h13.5c24.7 56.5 80.9 96 146.5 96s121.8-39.5 146.5-96H384c8.8 0 16-7.2 16-16v-96c0-8.8-7.2-16-16-16h-13.5C345.8 39.5 289.6 0 224 0S102.2 39.5 77.5 96H64c-8.8 0-16 7.2-16 16v96c0 8.8 7.2 16 16 16zm40-88c0-22.1 21.5-40 48-40h144c26.5 0 48 17.9 48 40v24c0 53-43 96-96 96h-48c-53 0-96-43-96-96v-24zm72 72l12-36 36-12-36-12-12-36-12 36-36 12 36 12 12 36zm151.6 113.4C297.7 340.7 262.2 352 224 352s-73.7-11.3-103.6-30.6C52.9 328.5 0 385 0 454.4v9.6c0 26.5 21.5 48 48 48h80v-64c0-17.7 14.3-32 32-32h128c17.7 0 32 14.3 32 32v64h80c26.5 0 48-21.5 48-48v-9.6c0-69.4-52.9-125.9-120.4-133zM272 448c-8.8 0-16 7.2-16 16s7.2 16 16 16 16-7.2 16-16-7.2-16-16-16zm-96 0c-8.8 0-16 7.2-16 16v48h32v-48c0-8.8-7.2-16-16-16z"/></svg> Inicia Sesión</button></div>
- 
-      </div>
-    <div class="Header2">
-      <div class="logo-header">
-        <amp-img 
-        src="Source/Pic/Logo-Completo.png" 
-        width="150px"
-        height="150px"
-        layout="responsive" 
-        alt="logo" 
-        id="logo-header">
-        </amp-img>
-      </div>
-    </div>
-    <!--Fin Header-->
+    
 <div class="contenedor-portada">
   <amp-img
   src="Source/Pic/PortadaWeb.png"
@@ -317,19 +334,9 @@ margin-bottom: 50px;
   alt="portada"
   class="portada">
 </amp-img>
-<amp-iframe
-class="iframe" 
-width="135px" 
-height="58px"
-title="divisa" 
-frameborder="0" 
-scrolling="no"
-sandbox="allow-scripts allow-same-origin allow-popups"
-src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSRL-tdqBy7jf9kNE5y4S43NNkYRV9twvjlF2ufSfZAsaomTL6A8pylLRU906u3pJofqA1iq-4NwFM4/pubhtml?gid=351059049&amp;single=true&amp;widget=false&amp;headers=false&amp;chrome=false&amp;range=A1:B2">
-</amp-iframe>
 </div>
+
 <div><h1>Torneos Activos</h1></div>
-<div class="linea"><div class="linea-int"> </div></div>
 <!--Tarjeta torneo-->
 <div class="Tarjeta-Torneo">
   <div>
@@ -337,6 +344,7 @@ src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSRL-tdqBy7jf9kNE5y4S43NNkY
     src="Source/Pic/icon-yugioh.png"
     width="200px"
     height="200px"
+    layout="responsive"
     alt="icon-yugioh"
     class="Icono">
     </amp-img>
@@ -370,14 +378,31 @@ src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSRL-tdqBy7jf9kNE5y4S43NNkY
 <!--Fin Contador AMP-->
 </div>
 
-
 </div>
 <div class="Contenedor-Boton-Inscripción">
   <button class="Boton-inscripción">Inscripciones Abiertas</button>
 </div>
 </div>
 <!--Fin Tarjeta Torneo-->
-  </body>
+
+<!--DIVISA-->
+<div class="divisa">
+  <div class="divisor"></div>
+<h3>¿Cuantos pesos colombianos son $0.13 dolares?</h3>
+  <amp-iframe
+class="iframe" 
+width="102px" 
+height="53px"
+title="divisa" 
+frameborder="0" 
+scrolling="no"
+sandbox="allow-scripts allow-same-origin allow-popups"
+src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSRL-tdqBy7jf9kNE5y4S43NNkYRV9twvjlF2ufSfZAsaomTL6A8pylLRU906u3pJofqA1iq-4NwFM4/pubhtml?gid=351059049&amp;single=true&amp;widget=false&amp;headers=false&amp;chrome=false&amp;range=A1:B2">
+</amp-iframe>
+<p class="parrafo-pequeño">*Las cotizaciones provienen de NASDAQ y pueden tardar hasta 20 minutos en aparecer. La información se proporciona "tal cual", y solamente con un propósito informativo, no con objetivos comerciales ni de asesoramiento.</p>
+</div>
+
+</body>
 
   <!--FOOTER-->
 <footer>
