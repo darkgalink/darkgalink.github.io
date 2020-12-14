@@ -1,13 +1,49 @@
 <!DOCTYPE html>
-<html  >
+<html lang="es" >
 <head>
-  <!-- Site made with Mobirise Website Builder v5.2.0, https://mobirise.com -->
+  <!-- Novenapp 2020 -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Mobirise v5.2.0, mobirise.com">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
   <link rel="shortcut icon" href="assets/images/logoapp.svg" type="image/x-icon">
   <meta name="description" content="Novena de aguinaldos con villancicos  y narración de apoyo">
+  <!--PWA CODES-->
+  <meta name="theme-color" content="#DC3023">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Novenapp">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#DC3023">
+
+  <link rel="preload" href="global.css" as="style">
+  <link rel="preload" href="script/app-index.js" as="script">
+
+  <link rel="icon" href="asset/icons/icon_24.png" type="image/x-icon">
+
+  <link rel="manifest" href="manifest.json">
+
+  <link href="global.css" rel="stylesheet">
+
+  <script type="module" src="script/app-index.js"></script>
+<!--Instalar App-->
+  
+<!--Offline-->
+<script>
+    // This is the "Offline page" service worker
+
+// Add this below content to your HTML page inside a <script type="module"></script> tag, or add the js file to your page at the very top to register service worker
+// If you get an error about not being able to import, double check that you have type="module" on your <script /> tag
+
+/*
+ This code uses the pwa-update web component https://github.com/pwa-builder/pwa-update to register your service worker,
+ tell the user when there is an update available and let the user know when your PWA is ready to use offline.
+*/
+
+import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+
+const el = document.createElement('pwa-update');
+document.body.appendChild(el);
+</script>
+
+  <!--END PWA CODES-->
   
   
   <title>Novenapp</title>
@@ -30,6 +66,19 @@
 </head>
 <body>
   
+<!-- Our app-index web component. This component is defined in src/pages/app-index.ts-->
+<app-index></app-index>
+
+<!-- For more info on the pwa-update component click here https://github.com/pwa-builder/pwa-update -->
+<script type="module" src="https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate"></script>
+<pwa-update swpath="/pwabuilder-sw.js"></pwa-update>
+
+
+
+
+
+
+
   <section class="menu menu2 cid-sj5l4SpedD" once="menu" id="menu2-2e">
     
     <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
@@ -53,7 +102,24 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item dropdown"><a class="nav-link link text-black dropdown-toggle display-4" href="#" data-toggle="dropdown-submenu" aria-expanded="false"><span class="mbrib-file mbr-iconfont mbr-iconfont-btn"></span>Orden de la Novena</a><div class="dropdown-menu"><a class="text-black dropdown-item text-primary display-4" href="index.html#content4-3">Oración para todos los días</a><a class="text-black dropdown-item text-primary display-4" href="Consideraciones.html">Consideraciones del día</a><a class="text-black dropdown-item text-primary display-4" href="index.html#features11-f">Oración a la Santísima Virgen</a><a class="text-black dropdown-item text-primary display-4" href="index.html#features11-g">Oración a San José</a><a class="text-black dropdown-item text-primary display-4" href="Gozos.html">Gozos o Aspiraciones para la venida del Niño Jesús</a><a class="text-black dropdown-item text-primary display-4" href="index.html#features11-k">Oración al Niño Jesús</a><a class="text-black dropdown-item text-primary display-4" href="index.html#content5-l">Consagración de las Familias al Niño Jesús</a></div>
                     </li><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="Villancicos.html" aria-expanded="true"><span class="mobi-mbri mobi-mbri-music mbr-iconfont mbr-iconfont-btn"></span>Villancicos</a></li></ul>
-                
+                    
+                    
+
+                    <pwa-install>
+                    #shadow-root(open)
+                    <button part="openButton" id="openButton">
+                        <slot><!---->Install<!----></slot>
+                    </button>
+                        Install
+                    </pwa-install>
+                    <script type="module" src="https://cdn.jsdelivr.net/npm/@pwabuilder/pwainstall@latest/dist/pwa-install.min.js"></script>
+                    <script>
+                        if ("serviceWorker" in navigator) {
+                        navigator.serviceWorker.register("/service-worker.js");
+                       }
+                    </script>
+
+
                 <div class="navbar-buttons mbr-section-btn"><a class="btn btn-primary display-4" href="index.html"><span class="mobi-mbri mobi-mbri-to-local-drive mbr-iconfont mbr-iconfont-btn"></span>
                         Guardar en Dispositivo</a></div>
             </div>
