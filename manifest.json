@@ -27,6 +27,7 @@
       "sizes": "24x24"
     }
   ],
+  "categories": ["books", "Christmas"],
   "screenshots": [
     {
       "src": "assets/screenshots/screen.png",
