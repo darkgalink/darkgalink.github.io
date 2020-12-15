@@ -29,7 +29,9 @@
   ],
   "screenshots": [
     {
-      "src": "assets/screenshots/screen.png"
+      "src": "assets/screenshots/screen.png",
+      "sizes": "1438x900",
+    "type": "image/png"
     },
     {
       "src": "assets/screenshots/screen.png"
