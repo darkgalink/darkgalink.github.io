@@ -9,20 +9,65 @@
   <link rel="shortcut icon" href="assets/images/logoapp.svg" type="image/x-icon">
   <meta name="description" content="Gozos de la novena de agüinaldos">
   
-    <!--PWA CODES-->
-    <meta name="theme-color" content="#DC3023">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-title" content="Novenapp">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#DC3023">
-    
+      <!--PWA CODES-->
+  <base href="/">
+  <!-- These meta tags are Apple-specific, and set the web application to run in full-screen mode with a black status bar. Learn more at https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="PWA Starter">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
-    <link rel="icon" href="asset/icons/icon_24.png" type="image/x-icon">
+<meta name="theme-color" content="#DC3023">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Novenapp">
+<meta name="apple-mobile-web-app-status-bar-style" content="#DC3023">
+
+
+<link rel="icon" href="asset/icons/icon_24.png" type="image/x-icon">
+
+<link rel="manifest" href="manifest.json">
+
+
+<script src="src/app.js"></script>
+
+<script type="module">
+  // This is the "serving cached media" service worker
+
+  /*
+   This code uses the pwa-update web component https://github.com/pwa-builder/pwa-update to register your service worker,
+   tell the user when there is an update available and let the user know when your PWA is ready to use offline.
+  */
   
-    <link rel="manifest" href="manifest.json">
+  import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
   
+  const el = document.createElement('pwa-update');
+  document.body.appendChild(el);</script>
+
+<script type="module">// This is the service worker with the Cache-first network
+
+  /*
+   This code uses the pwa-update web component https://github.com/pwa-builder/pwa-update to register your service worker,
+   tell the user when there is an update available and let the user know when your PWA is ready to use offline.
+  */
   
-    <script src="src/app.js"></script>
-    <!--END PWA CODES-->
+  import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+  
+  const el = document.createElement('pwa-update');
+  document.body.appendChild(el);</script>
+
+<script type="module">// This is the "Offline copy of pages" service worker 
+  /*
+   This code uses the pwa-update web component https://github.com/pwa-builder/pwa-update to register your service worker,
+   tell the user when there is an update available and let the user know when your PWA is ready to use offline.
+  */
+  
+  import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+  
+  const el = document.createElement('pwa-update');
+  document.body.appendChild(el);
+  </script>
+
+
+<!--END PWA CODES-->
   
   <title>Gozos</title>
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
