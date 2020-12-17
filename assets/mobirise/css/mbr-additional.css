@@ -77,19 +77,19 @@ body {
 /* Buttons */
 .btn {
   padding: 1rem 3rem;
-  border-radius: 3px;
+  border-radius: 100px;
 }
 .btn-sm {
   padding: 0.6rem 1.5rem;
-  border-radius: 3px;
+  border-radius: 100px;
 }
 .btn-md {
   padding: 1rem 3rem;
-  border-radius: 3px;
+  border-radius: 100px;
 }
 .btn-lg {
   padding: 1.2rem 3.2rem;
-  border-radius: 3px;
+  border-radius: 100px;
 }
 .bg-primary {
   background-color: #cf1259 !important;
