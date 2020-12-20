@@ -3,10 +3,10 @@
     "display": "standalone",
     "start_url": "https://novenapp.ga/",
     "short_name": "Novenapp",
-    "theme_color": "#DC3023",
+    "theme_color": "#CF1259",
     "description": "Tu Novena de bolsillo",
     "orientation": "any",
-    "background_color": "#DC3023",
+    "background_color": "#CF1259",
     "related_applications": [],
     "prefer_related_applications": false,
     "icons": [
