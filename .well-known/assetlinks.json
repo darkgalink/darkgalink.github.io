@@ -1,5 +1,5 @@
 [{
       "relation": ["delegate_permission/common.handle_all_urls"],
-      "target" : { "namespace": "android_app", "package_name": "ga.novenapp.bryanmedin4",
+      "target" : { "namespace": "android_app", "package_name": "ga.novenapp.twa",
                    "sha256_cert_fingerprints": ["04:F9:59:86:FF:1C:6F:95:99:1B:5F:55:E1:FF:F2:3D:E2:28:7D:71:93:E0:28:B9:13:C3:01:77:EA:61:9A:6D"] }
     }]
