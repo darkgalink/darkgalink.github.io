@@ -1,0 +1,5 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target" : { "namespace": "android_app", "package_name": "ga.novenapp.bryanmedin4",
+                   "sha256_cert_fingerprints": ["48:EA:31:12:53:B1:35:38:A1:3A:2F:0E:CC:03:28:B1:2A:C6:20:C4:C3:18:41:EB:04:E3:C4:9F:F1:54:AD:F7"] }
+    }]
